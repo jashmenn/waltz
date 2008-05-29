@@ -1,0 +1,6 @@
+      <div class='section_closed'>
+        <div class="section_header <%= task_class(task) %>" onclick="toggle_section(this.parentNode)"><%= task.task_name %></div>
+        <div class="section_content"><%= format_rake_entry_contents(task.message) %></div>
+      </div>
+
+

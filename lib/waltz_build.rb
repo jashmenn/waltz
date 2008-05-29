@@ -1,0 +1,2 @@
+class WaltzBuild < Build
+end
