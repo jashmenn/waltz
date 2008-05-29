@@ -1,0 +1,15 @@
+OK. Here is what we need to do:
+
+* Create this as a typical plugin to the cruise application overall. 
+* Monkey patch the Project class to load any cruise plugins
+
+* symlink to my cruisecontrol 1.3 directory
+
+* There are two parts, the plugin itself and the builder plugin. 
+
+The plugin itself provides the following functionality:
+  * Bootstap code for the templates and views, any other monkey patches
+
+We should also make a directive for a project which is going to incorporate the monkey patching.
+
+

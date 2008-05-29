@@ -1,0 +1,43 @@
+1.  ruby script/plugin install http://svn.rails-engines.org/plugins/engines
+2.
+# add back in active_record
+# config.frameworks -= [ :active_record, :action_web_service ]
+  config.frameworks -= [ :action_web_service ]
+
+config/environment.rb
+
+* you're trying to get engines to work
+* but the migrations constant is gone. bluh
+* its easier to strip out all of our stuff into a plugin now then to do it later
+* so take out everything "waltzy" and make it a plugin
+
+Things that still need to be moved to an "engine" type plugin:
+  x the helper methods
+  * the views for the rake tasks
+
+Now we've basically got everything out except for the added views and changed stylesheets.
+  * Now what we need to do is create the setting to have a base-dir somewhere else
+  * then have the ability to run rake tasks in that base-dir
+
+Ideally "local checkout" would just be the path directory that we've always
+been specifying.  There's no need for an intermediate Rakefile. We don't need
+the work/ directory with its own Rakefile. We should just change into the
+actually directory.
+
+What needs to happen in order for this to be the case? We need to change where
+the working path is loaded when the project is read in.
+
+  * add in features for an individual rake task to be parsed such that it can
+    throw warnings and that will show up visually as a highlighted color.
+  * update waltz to run on a different port
+  * figure out how to vc the projects and their configs - probably put in a sibling directory
+  x update it so the build is not manually requested at startup
+
+ 
+  * Colorize the generator logs. the Generate line.
+  x Have the log grabber gather all of the ARTIFACT: lines from the log
+
+  * move the log_parser.rb waltz additions out of the log_parser.rb file
+  x have the ARTIFACTS have the ability to set a to: name
+
+  * have the rake tasks parser look for "rake aborted!" and have that task be highlighted red
