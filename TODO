@@ -12,5 +12,3 @@ The plugin itself provides the following functionality:
 
 We should also make a directive for a project which is going to incorporate the monkey patching.
 
-
-

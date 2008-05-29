@@ -1,5 +1,7 @@
-# from the old streamlined. to override the template roots. thanks goes out to the guys from streamlined
-# for sharing this code at railsconf08
+#
+# from the old streamlined. to override the template roots. thanks goes out to
+# justin gehtland  and the guys from streamlined for sharing this code at
+# railsconf08
 #
 STREAMLINED_ROOT = Pathname.new(File.join(File.dirname(__FILE__), "../..")).expand_path.to_s
 STREAMLINED_TEMPLATE_ROOT = 
