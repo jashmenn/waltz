@@ -1,5 +1,4 @@
 # hook code goes here
-puts "loading waltz plugin"
 
 WALTZ_ROOT = File.join(File.dirname(__FILE__))
 $LOAD_PATH << File.join(WALTZ_ROOT, "lib", "builder_plugins")
