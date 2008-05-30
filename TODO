@@ -12,3 +12,4 @@ The plugin itself provides the following functionality:
 
 We should also make a directive for a project which is going to incorporate the monkey patching.
 
+* remove the *mixin files from the builder plugin once everything is working

@@ -1,7 +1,8 @@
 PollingScheduler.class_eval do
 
   # TODO - just subclass the polling scheduler and make a waltz scheduler that
-  # just doesn't reload the project
+  # just doesn't reload the project OR have the config modified reloading be an
+  # option form the project config
   def run
     while (true) do
      begin

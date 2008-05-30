@@ -1,4 +1,6 @@
 LogParser.class_eval do 
+  # This file extends the ability of the LogParser to read individual rake tasks
+
   def rake_task_logs(opts = {})
     opts[:skips] ||= /cc:/
 
